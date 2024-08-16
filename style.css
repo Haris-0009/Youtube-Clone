@@ -179,9 +179,13 @@
     width: 30px;
 }
 
+.content{
+    display: flex;
+    flex-direction: row;
+
+}
 
 .Sider{
-    /* background-color: aqua; */
     justify-items: center;
     height: 100vh;
     width: 14%;
@@ -226,13 +230,11 @@
 
 
 .Sider hr{
-
     color: #ededed;
     background-color: #ededed;
     margin-top: 15px;
     width: 110%;
     margin-bottom: 15px;
-
 }
 
 .Sider h2{
@@ -245,6 +247,44 @@
 .videos-section{
     background-color:aqua;
     height: 100vh;
-    width: 100%;
+    width: 86%;
 }
+
+.keywords{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 80.5rem;
+    /* background-color: aqua; */
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+.keywords ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    gap: 10px;
+    list-style: none;
+}
+
+.keywords ul li{
+    background-color: #f2f2f2;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 6px;
+    transition: transform 0.5s;
+}
+
+.keywords ul li:hover{
+    background-color: #c2bdbd;
+}
+
+
+
+
+
 
