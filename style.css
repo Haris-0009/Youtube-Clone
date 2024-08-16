@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    max-width: 100%;
+    height: 55px;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+
+.header nav ul{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+
