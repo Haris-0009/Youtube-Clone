@@ -74,7 +74,7 @@
     border-width: 1px;
     border-color: #e6e6e6;
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
-    color: #c2bfbf;
+    color: black;
 }
 
 
@@ -188,10 +188,13 @@
 .Sider{
     justify-items: center;
     height: 100vh;
-    width: 14%;
+    width: 17%;
     padding: 8px;
     padding-top: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
+    z-index: 1;
+    scrollbar-width: 8px;
 }
 
 
@@ -245,7 +248,7 @@
 }
 
 .videos-section{
-    background-color:aqua;
+    /* background-color:aqua; */
     height: 100vh;
     width: 86%;
 }
@@ -253,11 +256,15 @@
 .keywords{
     font-family: Arial, Helvetica, sans-serif;
     height: 30px;
-    width: 80.5rem;
+    width: 79.5rem;
     /* background-color: aqua; */
     padding: 8px;
     font-size: 14px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
 }
+
 
 
 .keywords ul{
@@ -266,6 +273,13 @@
     justify-content:left;
     gap: 10px;
     list-style: none;
+
+}
+
+.word{
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 5px;
 }
 
 .keywords ul li{
@@ -277,13 +291,47 @@
     padding-left: 8px;
     border-radius: 6px;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 
 .keywords ul li:hover{
     background-color: #c2bdbd;
 }
 
+.keywords ul li:active{
+    opacity: 0.7;
+}
 
+
+.keywords::-webkit-scrollbar{
+    height: 7px;
+    width: auto;
+}
+
+.keywords::-webkit-scrollbar-thumb:hover{
+    background: #606060;
+}
+
+.Sider::-webkit-scrollbar{
+    width: 7px;
+    height: auto;
+}
+
+.video-grid{
+    padding-top: 20px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 20px;
+}
+
+.Sider::-webkit-scrollbar-thumb:hover{
+    background:#606060;
+}
+
+.Vid{
+    height: 300px;
+}
 
 
 
